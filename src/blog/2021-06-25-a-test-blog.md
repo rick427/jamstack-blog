@@ -5,6 +5,7 @@ author: kirigaya
 date: 2021-06-25T11:07:06.501Z
 tags:
   - post
+  - featured
 image: /public/assets/blog/kirigaya.jpg
 imageAlt: kazuhito Kirigaya
 ---
