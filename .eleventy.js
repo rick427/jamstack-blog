@@ -1,11 +1,11 @@
 const {DateTime} = require('luxon');
 
-module.exports = function(config){
-    config.addPassthroughCopy('./src/style.css');
-    config.addPassthroughCopy('./src/assets');
-    config.addPassthroughCopy('./src/admin');
+module.exports = function(eleventyConfig){
+    eleventyConfig.addPassthroughCopy('./src/style.css');
+    eleventyConfig.addPassthroughCopy('./src/assets');
+    eleventyConfig.addPassthroughCopy('./src/admin');
 
-    config.addFilter('postDate', (dateObj) => {
+    eleventyConfig.addFilter('postDate', (dateObj) => {
         return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED)
     })
     return {
